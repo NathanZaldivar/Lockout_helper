@@ -12,4 +12,5 @@ Available functions:
 
 ## Retrieving and printing user information
 Lockout helper utilizes windows active directory module to retrieve user infomration and will then rpint that information to the terminal in a table format.
+
 ![image](https://user-images.githubusercontent.com/72000765/138569663-a96bcb5d-302d-4ab5-839d-1a0782fcf46e.png)
