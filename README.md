@@ -43,7 +43,7 @@ As the function name implies this simply restarts lockout helper and you will be
 
 ## Printing manager tree
 
-This function will print the current selected users manager tree up to 3 positons above the current user, this implements the same command powershell command **Get-ADuser** but will only retrieve information on the users manager.
+This function will print the current selected users manager tree up to 3 positons above the current user, this uses the same powershell command **Get-ADuser** but will only retrieve information on the users manager.
 
 ![Capture](https://user-images.githubusercontent.com/72000765/138570716-7540573a-e7e9-4dba-97cd-0cd881ecea22.PNG)
 
