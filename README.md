@@ -27,12 +27,11 @@ Lockout helper will then print the information to the terminal and save the user
 When processing the information gathered from Get-ADuser Lockout helper will also check for three common issues, whether the user is locked out, whether the users logon hours are correctly set, and whether the users account is disabled.
 
 ## Unlocking users accounts
-Lockout helper as the name implies will unlock users accounts using the 0 option, this is done with the **Unlock-ADAccount** powershell command.
+Lockout helper as the name implies will unlock users accounts, this is done with the **Unlock-ADAccount** powershell command.
 ```
 powershell -Command Unlock-ADAccount -Identity <USERNAME HERE>
 
 ```
-Once done Lockout helper will simply print done.
 
 ![image](https://user-images.githubusercontent.com/72000765/138570563-a1cd9905-4adf-42dd-9c13-780bcab2d0d4.png)
 
