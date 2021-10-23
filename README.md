@@ -15,8 +15,12 @@ Lockout helper utilizes windows active directory module to retrieve user infomra
 
 ![image](https://user-images.githubusercontent.com/72000765/138569663-a96bcb5d-302d-4ab5-839d-1a0782fcf46e.png)
 
-Lockout helper will first ask for the users username, once enterd lockout helper will first retrieve the information using this the **Get-ADuser** command.
+Lockout helper will first ask for the users username, once enterd lockout helper will first retrieve the information using the **Get-ADuser** command and will then format using the **Select-Object** command.
 ```
 powershell -Command Get-ADUser -Identity <USERNAME_HERE> -Properties Lockedout, Manager, Mail, logonhours, AccountLockoutTime, Name, PasswordExpired, PasswordLastSet, Title, employeeType, Enabled | Select-Object Name, Lockedout, logonhours, Mail, AccountLockoutTime, Manager, PasswordExpired, PasswordLastSet, Title, employeeType, Enabled
 
 ```
+Lockout helper will then print the information to the terminal and save the username to your clipboard for use durring the troubleshooting process.
+
+![Capture](https://user-images.githubusercontent.com/72000765/138569969-61ca7c7d-f724-4b7c-947e-d4fc0fd9a6f4.PNG)
+
